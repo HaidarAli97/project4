@@ -1,0 +1,116 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.canvas{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F3EAE3;
+    align-items: center;
+    
+    .con{
+        max-width: 800px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        
+
+        .img-con, .info-con{
+            flex-basis: 48%;
+        }
+
+        .img-con{
+                    max-width: 300px;
+                    min-height: 200px;
+                    border-top-left-radius: 5%;
+                    border-bottom-left-radius: 5%;
+        }
+
+        
+     
+        
+        .info-con{
+            max-width: 300px;
+            min-height: 200px;
+            background-color: #fff;
+            padding: 2.2rem;
+            border-top-right-radius: 5%;
+            border-bottom-right-radius: 5%;
+
+            h3{
+                font-weight: 80;
+                font-size: 12px;
+                color: #A3A6AD;
+            }
+
+            h2{
+                margin-top: 20px;
+                font-size:30px;
+                font-weight: 2000;
+                line-height: 30px;
+                color: #1A2126;
+            }
+
+            p{
+                color: #828386cb;
+                font-size: .8em;
+                margin-top: 30px;
+                line-height: 20px;
+            }
+
+            span{
+                color:#3D8168;
+                margin-top:20px ;
+            }
+            
+            del{
+                font-size: .8rem;
+                color: #828386cb;
+                margin-bottom: 20px !important;
+            }
+
+            .btn{
+                min-width: 200px;
+                min-height: 40px;
+                border-radius: 8px;
+                margin-top: 20px;
+                background-color: #3D8168;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        }
+        
+    }   
+
+    @media (width <=760px) {
+        .con{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .info-con{
+                border-top-right-radius: 0;
+            }
+        }
+    }
+}
